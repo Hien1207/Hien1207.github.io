@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    height: 200vh;
+}
+.full-screen{
+    width:100vw;
+    height: 100vh;
+}
+.container{
+    height: 1000px;
+    width: 1500px;
+    background-size: contain;
+    display: inline-flex;
+}
+.div{
+    height: 1000px;
+    width: 1600px;
+    background:url(https://i.pinimg.com/736x/ac/b2/fa/acb2fac1b7778d5bf18a8b2adcdc749f.jpg) no-repeat ;
+    background-size: contain;
+    position: fixed;
+    z-index: -2;
+}
+.div1{
+   height: 1000px;
+   width: 100px;
+   position: fixed;
+}
+.menu{
+    height: 55px;
+    width: 110px;
+    background: rgb(58, 56, 56);
+    margin-top: 50px ;
+    display: inline-flex;
+}
+.side-menu{
+     height: 900px;
+     width: 250px;
+     left:0px;
+     background: black;
+     z-index:1;
+     transition: all 1s ease;
+     position: fixed;
+}
+.close{
+    height: 60px;
+}
+.side-menu-name{
+   height: 50px;
+   margin:10px 20px 0px 30px;
+   border: 3px solid white;
+   display: inline-flex;
+}
+.side-menu-job{
+    height: 50px;
+    text-align: center;
+}
+.side-menu-este{
+    height: 330px;
+}
+.active{
+    height: 40px;
+    font-size: 14px;
+    border-bottom: 1px dotted white;
+    margin:0px 20px;
+    transition:all 0.3s ease-in-out ;
+}
+.active:hover{
+    transform: translateX(10px);
+}
+.side-menu-button{
+    height: 100px;
+}
+.btn{
+    height: 42px;
+    border:1px solid white;
+    margin:15px 20px;
+}
+.btn:hover{
+    background: rgb(206, 196, 183);
+}
+.div1:hover + .side-menu{
+    left: 0px;
+    opacity: 0.8;
+}
+.div2{
+    height: 5000px;
+    width: 900px;
+    background: white;
+    margin: 50px 200px 50px 400px;
+    display: inline-block;
+}
+.row{
+     height: 8px;
+     width: 900px;
+     background: red;
+}
+.color{
+    height: 8px;
+    width: 20%;
+    float:left;
+}
+.color1{
+    background: rgb(236, 16, 152);
+}
+.color2{
+    background: rgb(17, 106, 194);
+}
+.color3{
+    background: rgb(72, 221, 152);
+}
+.row1{
+    height: 80px;
+    width: 1000px;
+}
+.intro{
+    height: 320px;
+    width: 900px;
+    display: inline-flex;
+}
+.row-avata{
+    height: 300px;
+    width: 30%;
+}
+#avata{
+    height: 250px;
+    margin: 10px;
+    border: 5px solid rgb(75, 42, 42);
+    border-radius: 50%;
+}
+.intro1{
+    height: 320px;
+    width: 630px;
+    margin: 10px 80px;
+}
+.intro2{
+    height: 100px;
+    border-bottom: 2px solid rgb(49, 35, 35);
+    display: inline-flex;
+}
+.intro3{
+    font-size: 20px;
+    text-align: left;
+}
+.profile{
+    height: 430px;
+    width: 700px;
+    margin-left: 200px;
+}
+.profile1{
+    height: 70px;
+    width: 700px;
+    text-align: left;
+    font-family:'Open Sans',sans-serif;
+}
+.section{
+    text-transform: uppercase;
+    color:rgb(15, 15, 107);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+.section1{
+    color: rgb(62, 62, 136);
+    border-bottom: 1px solid rgb(156, 156, 145);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    margin:15px 100px 0px 0px;
+}
+.btn-default{
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    width: 30px;
+    background: rgb(19, 19, 104);
+    border-radius: 5px 5px;
+    z-index: -1;
+    margin: 10px 3px;
+    opacity: 0.8;
+}
+.btn-default:hover{
+    opacity: 1;
+}
