@@ -13,14 +13,14 @@
         <div class="div"></div>
         <div class="container">
           <div class="div1">
-              <div class="menu">
+              <div class="menu" >
                 <i class="fas fa-bars" style="color: white;margin: 20px 0px 20px 20px;"></i>;
-                <h2 style="color: white; font-size: 18px;margin-top: 18px;"> MENU</h2>
+                <h2 style="color: white; font-size: 18px;margin-top: 18px; cursor: pointer;"onclick="openMenu()"> MENU</h2>
               </div>
-          </div>
-          <div class="side-menu">
+            </div>
+          <div id="menu" class="side-menu">
               <div class="close">
-                <i class="fas fa-times" style="margin:10px 5px 30px 220px; font-size: 25px; color: rgb(179, 171, 156);"></i>
+                 <i class="fas fa-times" style="margin:10px 5px 30px 220px; font-size: 25px; color: rgb(179, 171, 156); cursor: pointer;" onclick="closeMenu()"></i>
               </div>
               <div class="side-menu-name">
                   <h2 style="color: white;font-size: 23px;font-weight:3; margin: 10px;">TRAN THI HIEN
@@ -30,29 +30,39 @@
               <div class="side-menu-este">
                   <div class="active">
                       <a href="#intro">
-                      <i class="fas fa-angle-right" style="color: white;margin: 15px 0px;">INTRO</i>
+                      <i class="fas fa-angle-right" style="color: white;margin: 15px 0px; cursor: pointer;">INTRO</i>
                     </a>
                  </div> 
                  <div class="active">
                      <a href="#education">
-                    <i class="fas fa-angle-right" style="color: white;margin: 15px 0px;">EDUCATION</i>
+                    <i class="fas fa-angle-right" style="color: white;margin: 15px 0px; cursor: pointer;">EDUCATION</i>
                 </a>
                </div> 
                <div class="active">
-                      <i class="fas fa-angle-right" style="color: white;margin: 15px 0px;">WORK EXPERIENCE</i>
+                   <a href="#work-experience">
+                      <i class="fas fa-angle-right" style="color: white;margin: 15px 0px; cursor: pointer;">WORK EXPERIENCE</i>
+                    </a>
                  </div> 
                  <div class="active">
-                    <i class="fas fa-angle-right" style="color: white;margin: 15px 0px;">SKILLS</i>
+                     <a href="#skill">
+                    <i class="fas fa-angle-right" style="color: white;margin: 15px 0px;cursor: pointer;">SKILLS</i>
+                    </a>
                </div> 
                <div class="active">
-                <i class="fas fa-angle-right" style="color: white;margin: 15px 0px;">INTERESTS</i>
+                   <a href="#interests">
+                <i class="fas fa-angle-right" style="color: white;margin: 15px 0px;cursor: pointer;">INTERESTS</i>
+                   </a>
                </div>
                <div class="active">
-                <i class="fas fa-angle-right" style="color: white;margin: 15px 0px;">PORTFOLIO</i>
-                </div>
+                   <a href="#portfolio">
+                   <i class="fas fa-angle-right" style="color: white;margin: 15px 0px;cursor: pointer;">PORTFOLIO</i>
+                  </a>
+            </div>
                 <div class="active">
-                    <i class="fas fa-angle-right" style="color: white;margin: 15px 0px;">CONTACT</i>
-               </div>   
+                    <a href="#contact">
+                    <i class="fas fa-angle-right" style="color: white;margin: 15px 0px;cursor: pointer;">CONTACT</i>
+                     </a>
+                </div>   
              </div>
              <div class="side-menu-button">
                  <div class="btn">
@@ -63,6 +73,8 @@
                 </div>
              </div>
         </div>
+   
+        <div class="div2-0">
         <div class="div2">
             <div class="row">
                 <div class="color color1"></div>
@@ -72,7 +84,12 @@
                 <div class="color color2"></div>
             </div>
             <div class="row1">
-
+                <a href="#" class="btn-default" style="margin-left: 780px;">
+                    <i class="fas fa-download" style="color: white; margin-top:7px; margin-left: 8px;"></i>
+                </a>
+                <a href="#" class="btn-default">
+                    <i class="fas fa-envelope" style="color: white; margin-top:7px;margin-left: 8px;"></i>
+                </a>
             </div>
             <section class="intro" id="intro">
                 <div class="row-avata">
@@ -84,69 +101,497 @@
                             <h1 style="font-size: 50px; color: rgb(105, 141, 209);margin-left: 10px;font-family:inherit"> Tran Thi Hien!</h1>
                         </h1>
                     </div>
-                    <h2 class="intro3">Programmer</h2>
+                    <h2 class="intro3" style="color: rgb(145, 148, 148);">Programmer</h2>
+                    <p>
+                       <strong>Turpis, sit amet iaculis dui consectetur at.</strong>  Cras sagittis molestie orci. 
+                       <strong>Suspendisse ut laoreet mi</strong>. Phasellus eu tortor vehicula, blandit enim eu, auctor massa. Nulla ultricies tortor dolor, sit amet suscipit enim 
+                       <strong>condimentum id</strong>. Etiam eget iaculis tellus.  Varius sit amet.
+                    </p>
                 </div>
+               
             </section>
+            <div class="line">
+                <div class="timeline"></div>
+            </div>
             <section class="profile" >
+                <div class="row2">
+                    <div class="line">
+                        <div class="timeline" style=" height: 50px;"></div>
+                        <div class="timeline0"></div>
+                        <div class="timeline" style=" height: 50px;"></div>
+                    </div>
                  <div class="profile1">
                      <h2 class="section">PROFILE</h2>
                  </div>
+                </div>
+                <div class="row2" style="margin-top: 30px;">
+                    <div class="line">
+                        <div class="timeline" style="height: 15px;"></div>
+                        <div class="timeline1">
+                            <div class="timeline2"></div>
+                        </div>
+                        <div class="timeline" style="height: 15px;"></div>
+                    </div>
                  <div class="profile1">
                      <h3 class="section1">FULL NAME</h3>
-                     <p>TRAN THI HIEN</p>
+                     <p style="margin-top:10px;">TRAN THI HIEN</p>
                 </div>
-                <div class="profile1">
+                 </div>
+                 <div class="row2">
+                    <div class="line">
+                        <div class="timeline" style="height: 10px;"></div>
+                        <div class="timeline1">
+                            <div class="timeline2"></div>
+                        </div>
+                        <div class="timeline" style="height: 10px;"></div>
+                    </div>
+                <div class="profile1" style="margin-top: 5px;">
                       <h3 class="section1">BORN</h3>
-                     <p>12/07/2001 - Giang Hai, Phu Loc, T-T-Hue, Viet Nam</p>
+                     <p style="margin-top:10px;">12/07/2001 - Giang Hai, Phu Loc, T-T-Hue, Viet Nam</p>
                 </div>
-                <div class="profile1">
+            </div>
+            <div class="row2">
+                <div class="line">
+                    <div class="timeline" style="height: 10px;"></div>
+                    <div class="timeline1">
+                        <div class="timeline2"></div>
+                    </div>
+                    <div class="timeline" style="height: 10px;"></div>
+                </div>
+                <div class="profile1"style="margin-top: 5px;">
                     <h3 class="section1">EMAIL</h3>
-                    <p>tranthihien12701@gmail.com</p>
+                    <p style="margin-top:10px;">tranthihien12701@gmail.com</p>
                 </div>
-                <div class="profile1">
+            </div>
+            <div class="row2">
+                <div class="line">
+                    <div class="timeline" style="height: 10px;"></div>
+                    <div class="timeline1">
+                        <div class="timeline2"></div>
+                    </div>
+                    <div class="timeline" style="height: 90px;"></div>
+                </div>
+                <div class="profile1"style="margin-top: 5px;">
                     <h3 class="section1">FIND ME ON</h3>
                     <a href="#" class="btn-default">
-                        <i class="fab fa-facebook-f" style="color: white; margin-top:7px;"></i>
+                        <i class="fab fa-facebook-f" style="color: white; margin:7px 10px;"></i>
                     </a>
                     <a href="#" class="btn-default">
-                        <i class="fab fa-twitter-square" style="color: white; margin-top: 7px;"></i>
+                        <i class="fab fa-twitter-square" style="color: white; margin:7px 8px;"></i>
                     </a>
                     <a href="#" class="btn-default">
-                        <i class="fab fa-linkedin" style="color: white; margin-top: 7px;"></i>
+                        <i class="fab fa-linkedin" style="color: white; margin:7px 8px;"></i>
                     </a>
                     <a href="#" class="btn-default">
-                        <i class="fas fa-link" style="color: white; margin-top: 7px;"></i>
+                        <i class="fas fa-link" style="color: white; margin:7px 8px;"></i>
                     </a>
                     <a href="#" class="btn-default">
-                        <i class="fab fa-telegram-plane" style="color: white;margin-top: 7px;"></i>
+                        <i class="fab fa-telegram-plane" style="color: white;margin:7px 8px;"></i>
                     </a>
                 </div>
+            </div>
             </section>
-            <section id="education" class="profile" >
+            <section id="education" class="profile" style="height: 650px;" >
+                 <div class="row2">
+                    <div class="line">
+                        <div class="timeline" style=" height: 50px;"></div>
+                        <div class="timeline0"></div>
+                        <div class="timeline" style=" height: 50px;"></div>
+                    </div>
                 <div class="profile1">
                     <h3 class="section">EDUCATION</h3>
                 </div>
-                <div class="profile1">
-                    <h3 class="section1">specialized</h3>
-                    <p class="fas fa-laptop" style="font-size: 19px;"> Information Technology</p>
+            </div>
+            <div class="row2" style="height: 160px;margin-top: 30px;">
+                <div class="line">
+                    <div class="timeline" style="height: 50px;"></div>
+                    <div class="timeline1">
+                        <i class="fas fa-book" style="color: rgb(207, 59, 59); margin:8px;font-size: 27px;"></i>
+                    </div>
+                    <div class="timeline" style="height: 75px;"></div>
                 </div>
-                <div class="profile1">
-                    <h3 class="section1">school</h3>
-                    <p class="fas fa-university" style="font-size: 19px;"> The University of Danang - University of Science and Technology</p>
+                <div class="profile2">
+                    <h3 class="section1">graphic design</h3>
+                    <p class="fas fa-university" style="font-size: 19px; color: rgb(88, 80, 80);"> St.Patrick University (2 Years Course) - </p>
+                    <span class="graduation-date">Graduation May 2013</span>
+                    <div class="graduation-des">
+                    <p style="margin-top: 0px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>  
                 </div>
-                <div class="profile1">
-                    <h3 class="section1">time</h3>
-                    <p class="fas fa-dna" style="font-size: 19px;"> 9/2019 - Pretion time</p>
-                    <p style="font-size: 18px;">Second-year student</p>
+            </div>
+            <div class="row2" style="height: 160px;">
+                <div class="line">
+                    <div class="timeline" style="height: 50px;"></div>
+                    <div class="timeline1">
+                        <i class="fas fa-book" style="color: rgb(207, 59, 59); margin:8px;font-size: 27px;"></i>
+                    </div>
+                    <div class="timeline" style="height: 75px;"></div>
                 </div>
+                <div class="profile2">
+                    <h3 class="section1">master of web design</h3>
+                    <p class="fas fa-university" style="font-size: 19px; color: rgb(88, 80, 80);"> St.Patrick University (2 Years Course) - </p>
+                    <span class="graduation-date">Graduation May 2013</span>
+                    <div class="graduation-des">
+                    <p style="margin-top: 0px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>  
+                </div>
+            </div>
+            <div class="row2" style="height: 160px;">
+                <div class="line">
+                    <div class="timeline" style="height: 50px;"></div>
+                    <div class="timeline1">
+                        <i class="fas fa-book" style="color: rgb(207, 59, 59); margin:8px;font-size: 27px;"></i>
+                    </div>
+                    <div class="timeline" style="height: 140px;"></div>
+                </div>
+                <div class="profile2">
+                    <h3 class="section1">graphic design</h3>
+                    <p class="fas fa-university" style="font-size: 19px; color: rgb(88, 80, 80);"> St.Patrick University (2 Years Course) - </p>
+                    <span class="graduation-date">Graduation May 2013</span>
+                    <div class="graduation-des">
+                    <p style="margin-top: 0px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>  
+                </div>
+            </div>
             </section>
-            <section class="profile" id="work-experience">
+            <section class="profile" id="work-experience" style="height: 780px;">
+                <div class="row2">
+                    <div class="line">
+                        <div class="timeline" style=" height: 50px;"></div>
+                        <div class="timeline0"></div>
+                        <div class="timeline" style=" height: 50px;"></div>
+                    </div>
                 <div class="profile1">
                     <h3 class="section">WORK EXPERIENCE</h3>
                 </div>
+            </div>
+            <div class="row2" style="height: 160px; margin-top: 30px;">
+                <div class="line">
+                    <div class="timeline" style="height: 50px;"></div>
+                    <div class="timeline1">
+                        <i class="fas fa-laptop" style="color: rgb(207, 59, 59); margin:7px 3px;font-size: 27px;"></i>
+                    </div>
+                    <div class="timeline" style="height: 75px;"></div>
+                </div>
+                <div class="profile2">
+                    <h3 class="section1">black tie corp</h3>
+                    <p class="fas fa-university" style="font-size: 19px; color: rgb(88, 80, 80);"> Web Designer - </p>
+                    <span class="graduation-date">June 2012 - Current</span>
+                    <div class="graduation-des">
+                    <p style="margin-top: 0px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>  
+                </div>
+            </div>
+            <div class="row2" style="height: 160px;">
+                <div class="line">
+                    <div class="timeline" style="height: 50px;"></div>
+                    <div class="timeline1">
+                        <i class="fas fa-laptop" style="color: rgb(207, 59, 59); margin:7px 3px;font-size: 27px;"></i>
+                    </div>
+                    <div class="timeline" style="height: 75px;"></div>
+                </div>
+                <div class="profile2">
+                    <h3 class="section1">oasis ltda</h3>
+                    <p class="fas fa-university" style="font-size: 19px; color: rgb(88, 80, 80);"> Front-end Developer - </p>
+                    <span class="graduation-date">Jan 2010-Apr 2012</span>
+                    <div class="graduation-des">
+                    <p style="margin-top: 0px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>  
+                </div>
+            </div>
+            <div class="row2" style="height: 160px;">
+                <div class="line">
+                    <div class="timeline" style="height: 50px;"></div>
+                    <div class="timeline1">
+                        <i class="fas fa-laptop" style="color: rgb(207, 59, 59); margin:7px 3px;font-size: 27px;"></i>
+                    </div>
+                    <div class="timeline" style="height: 75px;"></div>
+                </div>
+                <div class="profile2">
+                    <h3 class="section1">dupstudio</h3>
+                    <p class="fas fa-university" style="font-size: 19px; color: rgb(88, 80, 80);"> Designer - </p>
+                    <span class="graduation-date">Jan 2010 -Apr 2012</span>
+                    <div class="graduation-des">
+                    <p style="margin-top: 0px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>  
+                </div>
+            </div>
+            <div class="row2" style="height: 160px;">
+                <div class="line">
+                    <div class="timeline" style="height: 50px;"></div>
+                    <div class="timeline1">
+                        <i class="fas fa-laptop" style="color: rgb(207, 59, 59); margin:7px 3px;font-size: 27px;"></i>
+                    </div>
+                    <div class="timeline" style="height: 100px;"></div>
+                </div>
+                <div class="profile2">
+                    <h3 class="section1">dotrex co.</h3>
+                    <p class="fas fa-university" style="font-size: 19px; color: rgb(88, 80, 80);"> Designer - </p>
+                    <span class="graduation-date">Jan 2010 -Apr 2012</span>
+                    <div class="graduation-des">
+                    <p style="margin-top: 0px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>  
+                </div>
+            </div>
             </section>
+            <section class="profile" id="skill" style="height: 730px;">
+                <div class="row2">
+                    <div class="line">
+                        <div class="timeline" style=" height: 50px;"></div>
+                        <div class="timeline0"></div>
+                        <div class="timeline" style=" height: 50px;"></div>
+                    </div>
+                <div class="profile1">
+                    <h3 class="section">SKILLS</h3>
+                </div>
+            </div>
+            <div class="row2" style="height: 200px; margin-top: 30px;">
+                <div class="line">
+                    <div class="timeline" style="height: 90px;"></div>
+                    <div class="timeline1">
+                        <div class="timeline2"></div>
+                    </div>
+                    <div class="timeline" style="height: 60px;"></div>
+                </div>
+                <div class="profile2">
+                    <h3 class="section1">professional skills</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%;">
+                            <span class="progress-type">Comunication</span>
+                            <span class="progress-completed">70%</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%; background: rgb(72, 75, 109);">
+                            <span class="progress-type">Leadership</span>
+                            <span class="progress-completed">90%</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;background: rgb(71, 76, 88);">
+                            <span class="progress-type">Confidence</span>
+                            <span class="progress-completed">85%</span>
+                        </div>
+                    </div>
+                </div>  
+                </div>
+                <div class="row2" style="height: 200px;">
+                    <div class="line">
+                        <div class="timeline" style="height: 90px;"></div>
+                        <div class="timeline1">
+                            <div class="timeline2"></div>
+                        </div>
+                        <div class="timeline" style="height: 60px;"></div>
+                    </div>
+                    <div class="profile2">
+                        <h3 class="section1">software skills</h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%;">
+                                <span class="progress-type">Adobe Photoshop</span>
+                                <span class="progress-completed">85%</span>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%; background: rgb(72, 75, 109);">
+                                <span class="progress-type">Adobe Illustrator</span>
+                                <span class="progress-completed">90%</span>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 40%;background: rgb(71, 76, 88);">
+                                <span class="progress-type">Adobe Fireworks</span>
+                                <span class="progress-completed">40%</span>
+                            </div>
+                        </div>
+                    </div>  
+                    </div>
+                    <div class="row2" style="height: 160px;">
+                        <div class="line">
+                            <div class="timeline" style="height: 90px;"></div>
+                            <div class="timeline1">
+                                <div class="timeline2"></div>
+                            </div>
+                            <div class="timeline" style="height: 90px;"></div>
+                        </div>
+                        <div class="profile2">
+                            <h3 class="section1">code skills</h3>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%;">
+                                    <span class="progress-type">HTML5 / CSS3</span>
+                                    <span class="progress-completed">90%</span>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 60%; background: rgb(72, 75, 109);">
+                                    <span class="progress-type">Javascript</span>
+                                    <span class="progress-completed">60%</span>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 40%;background: rgb(71, 76, 88);">
+                                    <span class="progress-type">PHP</span>
+                                    <span class="progress-completed">40%</span>
+                                </div>
+                            </div>
+                        </div>  
+                        </div>
+            </section>
+            <section id="interests" class="profile" style="height: 480px;" >
+                <div class="row2">
+                   <div class="line">
+                       <div class="timeline" style=" height: 50px;"></div>
+                       <div class="timeline0"></div>
+                       <div class="timeline" style=" height: 50px;"></div>
+                   </div>
+               <div class="profile1">
+                   <h3 class="section">INTERESTS</h3>
+               </div>
+               </div>
+               <div class="row2" style="height: 120px; margin-top: 30px;">
+                <div class="line">
+                    <div class="timeline" style="height: 30px;"></div>
+                    <div class="timeline1">
+                        <div class="timeline2"></div>
+                    </div>
+                    <div class="timeline" style="height: 40px;"></div>
+                </div>
+                <div class="profile2">
+                    <h3 class="section1">art</h3>
+                    <p>Praesent tellus ligula, tincidunt et fringilla vel, tincidunt ut dui. Nulla feugiat, lacus ac malesuada lobortis, elit nunc congue nunc, vel imperdiet lorem leo a lectus.</p>
+                </div>  
+                </div>
+                <div class="row2" style="height: 120px;">
+                    <div class="line">
+                        <div class="timeline" style="height: 30px;"></div>
+                        <div class="timeline1">
+                            <div class="timeline2"></div>
+                        </div>
+                        <div class="timeline" style="height: 40px;"></div>
+                    </div>
+                    <div class="profile2">
+                        <h3 class="section1">games</h3>
+                        <p>Praesent tellus ligula, tincidunt et fringilla vel, tincidunt ut dui. Nulla feugiat, lacus ac malesuada lobortis, elit nunc congue nunc, vel imperdiet lorem leo a lectus.</p>
+                    </div>  
+                    </div>
+                    <div class="row2" style="height: 120px;">
+                        <div class="line">
+                            <div class="timeline" style="height: 30px;"></div>
+                            <div class="timeline1">
+                                <div class="timeline2"></div>
+                            </div>
+                            <div class="timeline" style="height: 60px;"></div>
+                        </div>
+                        <div class="profile2">
+                            <h3 class="section1">books</h3>
+                            <p>Praesent tellus ligula, tincidunt et fringilla vel, tincidunt ut dui. Nulla feugiat, lacus ac malesuada lobortis, elit nunc congue nunc, vel imperdiet lorem leo a lectus.</p>
+                        </div>  
+                        </div>
+            </section>
+            <section id="portfolio" class="profile" style="height: 430px;" >
+                <div class="row2">
+                   <div class="line">
+                       <div class="timeline" style=" height: 50px;"></div>
+                       <div class="timeline0"></div>
+                       <div class="timeline" style=" height: 50px;"></div>
+                   </div>
+               <div class="profile1">
+                   <h3 class="section">PORTFOLIO</h3>
+               </div>
+               </div>
+               <div class="row2" style="height: 120px; margin-top: 30px;">
+                <div class="line">
+                    <div class="timeline" style="height: 100px;"></div>
+                    <div class="timeline1">
+                        <div class="timeline2"></div>
+                    </div>
+                    <div class="timeline" style="height: 200px;"></div>
+                </div>
+                <div class="profile2" style="height: 250px;">
+                    <h3 class="section1">some works</h3>
+                   
+                </div>  
+                </div>
+            </section>  
+        </section>
+        <section id="contact" class="profile" style="height: 550px;" >
+            <div class="row2">
+               <div class="line">
+                   <div class="timeline" style=" height: 50px;"></div>
+                   <div class="timeline0"></div>
+                   <div class="timeline" style=" height: 50px;"></div>
+               </div>
+           <div class="profile1">
+               <h3 class="section">CONTACT</h3>
+           </div>
+           </div>
+           <div class="row2" style="height: 120px; margin-top: 30px;">
+            <div class="line">
+                <div class="timeline" style="height: 160px;"></div>
+                <div class="timeline1">
+                    <i class="fas fa-envelope" style="color: rgb(207, 59, 59); margin:7px 6px;font-size: 27px;"></i>
+                </div>
+                <div class="timeline" style="height: 260px;"></div>
+            </div>
+            <div class="profile2" style="height: 450px;">
+                <h3 class="section1">send me a message</h3>
+               <div class="form0">
+                <div class="form">
+                   <div class="form-work">
+                       <div class="form-control">Name</div>
+                   </div>
+                   <div class="form-work">
+                    <div class="form-control">Email</div>
+                   </div>
+                   <div class="form-work">
+                    <div class="form-control">Subject</div>
+                   </div>
+                   <div class="form-work" style="height: 120px;">
+                    <div class="form-control">Message</div>
+                </div>
+                <div class="form-work" style="width:200px; background: rgb(72, 75, 109);">
+                    <div class="form-control" style="margin-left: 60px;font-style: normal; ">SEND!</div>
+                   </div>
+                </div>
+               <div class="contact-infos">
+                   <h4 style="font-size: 15px; margin-bottom: 4px; color: rgb(5, 5, 102);margin-top: 0;">ADDRESS</h4>
+                   <p>136/3 Nguyen Luong Bang, Da Nang - Viet Nam</p>
+                   <h4 style="font-size: 15px; margin-bottom: 4px; color: rgb(5, 5, 102);margin-top: 0;">PHONE</h4>
+                   <p>+0399 368 991</p>
+                   <h4 style="font-size: 15px; margin-bottom: 4px; color: rgb(5, 5, 102);margin-top: 0;">MAIL</h4>
+                   <p>tranthihien12701@gmail.com</p>
+                </div>
+            </div>  
+            </div>
+        </section> 
+        <div class="profile" style="height: 550px;" >
+            <div class="row2">
+               <div class="line">
+                <div class="timeline" style="height: 300px;"></div>
+                <div class="timeline1">
+                    <div class="timeline2"></div>
+                </div>
+               </div>
+               <div class="profile2">
+                 <h3 class="form-control" style="color:rgb(110, 110, 110); font-size: 80px; font-weight:3;margin-top: 260px;">Thank You!</h3>
+            </div>
+            </div>
+        </div>
+        <div class="end">
+            <p style="font-size: 22px; margin-bottom: 5px;color: white;">“Ideas are the beginning points of all fortunes”</p>
+            <p style="font-size: 18px;font-weight: 700;color: white;">Napoleon Hill</p>
+        </div>
+        </div>
         </div>
     </div>
     </div>
+<script>
+    function openMenu() {
+    document.getElementById("menu").style.left = "0px";
+    }
+
+    function closeMenu() {
+    document.getElementById("menu").style.left = "-250px";
+    }
+</script>
 </body>
 </html>
