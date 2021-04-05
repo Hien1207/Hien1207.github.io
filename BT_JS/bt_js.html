@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bt_js.css">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+     <div class="full-screen">
+         <div class ="container">
+             <div class="row" onclick="show('click1')">
+                 <i class="fas fa-fire" style="color: red; margin: 15px;"></i>
+                 <div class="text">BT1: Viết chương trình để hiện thị ngày giờ</div>
+             </div>
+             <div id="click1"  class="click" >
+                 <p id ="b1" onclick="fs1()">Kết quả :</p>
+             </div>
+             <div class="row" onclick="show('click2')">
+                <i class="fas fa-fire" style="color: red; margin: 15px;"></i>
+                <div class="text">BT2: In ra ngày tháng năm theo các định dạng mm-dd-
+                    yyyy, mm/dd/yyyy, dd-mm-yyyy, dd/mm/yyyy</div>
+            </div>
+            <div id="click2" class="click">
+                <p id ="b2" onclick="fs2()">Kết quả :</p>
+            </div>
+            <div class="row" onclick="show('click3')">
+                <i class="fas fa-fire" style="color: red; margin: 15px;"></i>
+                <div class="text">BT3: Kiểm tra xem một số nguyên đã cho có
+                    chuỗi chữ số tăng hay không </div>
+            </div>
+            <div id="click3" class="click" style="height: 80px;">
+                <table  width="600" style="text-align:left">
+                    <tr>
+                        <td width="100" height="35">
+                            <label for="tang">Nhập số </label>
+                        </td>
+                        <td width="600px">
+                        <input style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;" type="text" name="tang" id="tang">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="800px" colspan="2"  height="35">
+                           <button onclick="fs3(document.getElementById('tang').value)">Kết quả</button>
+                           <span id="b3" style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row" onclick="show('click4')">
+                <i class="fas fa-fire" style="color: red; margin: 15px;"></i>
+                <div class="text">BT4: Thay thế mọi ký tự trong một chuỗi đã
+                    cho với ký tự theo sau nó trong bảng chữ cái.
+                </div>
+            </div>
+            <div id="click4" class="click" style="height: 80px;">
+                <table  width="600" style="text-align:left">
+                    <tr>
+                        <td width="100" height="35">
+                            <label for="thaythe">Nhập chuỗi:</label>
+                        </td>
+                        <td width="600px">
+                        <input style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;" type="text" name="thaythe" id="thaythe">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="800px" colspan="3"  height="35">
+                           <button onclick="fs4(document.getElementById('thaythe').value)">Chuỗi sau khi thay thế: </button>
+                           <span id="b4" style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row" onclick="show('click5')">
+                <i class="fas fa-fire" style="color: red; margin: 15px;"></i>
+                <div class="text">BT5:  Viết chương trình để tạo chuỗi bằng cách sử dụng ba ký tự ở
+                    giữa của một chuỗi có độ dài lẻ. Độ dài chuỗi phải lớn hơn hoặc bằng ba</div>
+            </div>
+            <div id="click5" class="click" style="height: 80px;">
+                <table  width="600" style="text-align:left">
+                    <tr>
+                        <td width="100" height="35">
+                            <label for="tao">Nhập chuỗi:</label>
+                        </td>
+                        <td width="600px">
+                        <input style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;" type="text" name="tao" id="tao">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="800px" colspan="3"  height="35">
+                           <button onclick="fs5(document.getElementById('tao').value)">Chuỗi được tạo: </button>
+                           <span id="b5" style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row" onclick="show('click6')">
+                <i class="fas fa-fire" style="color: red; margin: 15px;"></i>
+                <div class="text">BT6: Viết chương trình hiển thị số xuất hiện nhiều lần nhất trong mảng</div>
+            </div>
+            <div id="click6" class="click" style="height: 80px;">
+                <table  width="600" style="text-align:left">
+                    <tr>
+                        <td width="100" height="35">
+                            <label for="dem">Nhập dãy số:</label>
+                        </td>
+                        <td width="600px">
+                        <input style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;" type="text" name="dem" id="dem">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="800px" colspan="4"  height="35">
+                           <button onclick="fs6(document.getElementById('dem').value)">Số xuất hiện nhiều nhất là : </button>
+                           <span id="b6" style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row" onclick="show('click7')">
+                <i class="fas fa-fire" style="color: red; margin: 15px;"></i>
+                <div class="text">BT7: Viết chương trình để kiểm tra xem chuỗi chứa 'java' hay không </div>
+            </div>
+            <div id="click7" class="click" style="height: 80px;">
+                <table  width="600" style="text-align:left">
+                    <tr>
+                        <td width="100" height="35">
+                            <label for="ktra">Nhập chuỗi:</label>
+                        </td>
+                        <td width="600px">
+                        <input style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;" type="text" name="ktra" id="ktra">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="800px" colspan="4"  height="35">
+                           <button onclick="fs7(document.getElementById('ktra').value)">Kết quả : </button>
+                           <span id="b7" style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row" onclick="show('click8')">
+                <i class="fas fa-fire" style="color: red; margin: 15px;"></i>
+                <div class="text">BT8: Viết một hàm để lấy tên tháng từ một số cụ thể ( ví dụ : 1 – Tháng một) </div>
+            </div>
+            <div id="click8" class="click" style="height: 80px;">
+                <table  width="600" style="text-align:left">
+                    <tr>
+                        <td width="100" height="35">
+                            <label for="thang">Nhập số:</label>
+                        </td>
+                        <td width="600px">
+                        <input style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;" type="text" name="thang" id="thang">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="800px" colspan="4"  height="35">
+                           <button onclick="fs8(document.getElementById('thang').value)">Kết quả : </button>
+                           <span id="b8" style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row" onclick="show('click9')">
+                <i class="fas fa-fire" style="color: red; margin: 15px;"></i>
+                <div class="text">BT9: Viết một hàm JavaScript nhập một chuỗi và tìm từ dài nhất trong chuỗi</div>
+            </div>
+            <div id="click9" class="click" style="height: 80px;">
+                <table  width="600" style="text-align:left">
+                    <tr>
+                        <td width="100" height="35">
+                            <label for="dai">Nhập chuỗi:</label>
+                        </td>
+                        <td width="600px">
+                        <input style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;" type="text" name="dai" id="dai">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="800px" colspan="4"  height="35">
+                           <button onclick="fs9(document.getElementById('dai').value)">Từ dài nhất là : </button>
+                           <span id="b9" style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row" onclick="show('click10')">
+                <i class="fas fa-fire" style="color: red; margin: 15px;"></i>
+                <div class="text">BT10: Viết chương trình tạo form HTML nhập 2 số và in ra giá trị là số nguyên
+                    tố giữa 2 số đó</div>
+            </div>
+            <div id="click10" class="click" style="height: 100px;">
+                <table  width="600" style="text-align:left">
+                    <tr>
+                        <td width="100" height="35">
+                            <label for="so_a">Nhập a:</label>
+                        </td>
+                        <td width="600px">
+                        <input style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;" type="text" name="so_a" id="so_a">
+                        </td>
+                        <td width="100" height="35">
+                            <label for="so_b">Nhập b:</label>
+                        </td>
+                        <td width="600px">
+                        <input style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;" type="text" name="so_b" id="so_b">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="800px" colspan="4"  height="35">
+                           <button onclick="fs10(document.getElementById('so_a').value,document.getElementById('so_b').value)">Số nguyên tố là : </button>
+                           <span id="b10" style="border: none; border-bottom: 1px solid rgb(133, 131, 131); width: 200px;outline: none;"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+         </div>
+     </div>
+     <script>
+           function show(click)
+           {
+               document.getElementById(click).classList.toggle("show");
+           }
+           function fs1()
+           {
+               let today= new Date();
+               document.getElementById("b1").innerHTML="Day: "+ today.getDate()+"-"+today.getMonth()+"-"+today.getFullYear() + ", Hour : " + today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
+           }
+           function fs2()
+           {
+            let today = new Date();
+            dd = today.getDate();
+            mm = today.getMonth() + 1;
+            yyyy = today.getFullYear(); 
+               document.getElementById("b2").innerHTML= (mm+"-"+dd+"-"+yyyy) +"  |   "+ (mm+"/"+dd+"/"+yyyy) +"   |   "
+                                                       +dd+"-"+mm+"-"+yyyy +"   |   " +dd+"/"+mm+"/"+yyyy ;
+           }
+           function fs3(x)
+           {
+            let a=""+x;
+            let s=0;
+            for(let i =0;i<a.length+1;i++)
+            {
+                  if(a[i] > a[i+1])
+                  { 
+                    s++;
+                 }
+             }
+           if(s==0) document.getElementById("b3").innerHTML="La chuoi so tang";
+            else  document.getElementById("b3").innerHTML="Khong phai la chuoi so tang";
+           }
+           function fs4(str)
+           {
+            let strArr = "";
+            for(let i=0;i<str.length;i++)
+            {
+                  strArr += String.fromCharCode((str[i].charCodeAt())+1);
+            } 
+            document.getElementById("b4").innerHTML=(strArr);
+           }
+           function fs5(s)
+           {
+               if(s.length >=3)
+             {
+                  let str="";
+                  let x =(s.length-1)/2;
+                  for(let i=x-1;i<x+2;i++)
+                 {
+                        str += s[i];
+                 }
+                 document.getElementById("b5").innerHTML=(str);
+              }
+                 else document.getElementById("b5").innerHTML=("Độ dài chuỗi phải lớn hơn 3");
+           }
+           function fs6(arr)
+           {
+            let b=[];
+             b[0]= arr[0];
+            let x=1;
+             for(let i=1;i<arr.length;i++)
+             {
+              let dem=0;
+              for(let j=0;j<x;j++)
+              {
+              if(arr[i]==b[j])
+                   dem++;
+              }
+             if(dem==0){
+            b[x]=arr[i];
+            x++;
+              }
+           }
+           let c=[x];
+           for(let i=0;i<x;i++)
+           c[i]=0;
+               for(let i=0;i<x;i++){
+                  for(let j=0;j<arr.length;j++){
+                      if(arr[j]==b[i])
+                       c[i]++;
+                    }
+                  }
+               let max=c[0], vtri=0, y=1;
+           for(let i=1;i<x;i++){
+                    if(c[i]>max){
+                    max=c[i];
+                   vtri=i;
+                   y=1;
+                 }
+        if(c[i]==max){
+            y++;
+           }       
+        }
+     
+          if(y==1){
+            document.getElementById("b5").innerHTML=("Phần tử xuất hiện nhiều nhất là:" +b[vtri]);
+          }
+        else{
+        let d=[y];
+        let z=0;
+        for(let i=0;i<x;i++)
+            if(c[i]==max){
+                d[z]=i;
+                z++;
+            }
+            document.getElementById("b6").innerHTML=("Phần tử xuất hiện nhiều nhất là:")
+        for(let i=0;i<z;i++ )
+        document.getElementById("b6").innerHTML=(b[d[i]]+" ");
+         
+             }
+           }
+           function fs7(str)
+           {
+            let s="java";
+           if(str.includes(s)) document.getElementById("b7").innerHTML=("Chuoi co chua java");
+            else document.getElementById("b7").innerHTML=("Chuoi khong chua java");
+           }
+           function fs8(x)
+           {
+            switch(x)
+             {
+           case "1": document.getElementById("b8").innerHTML=("Tháng một"); break;
+           case "2": document.getElementById("b8").innerHTML=("Tháng hai"); break;
+           case "3": document.getElementById("b8").innerHTML=("Tháng ba"); break;
+           case "4": document.getElementById("b8").innerHTML=("Tháng tư"); break;
+           case "5": document.getElementById("b8").innerHTML=("Tháng năm"); break;
+           case "6": document.getElementById("b8").innerHTML=("Tháng sáu"); break;
+           case "7": document.getElementById("b8").innerHTML=("Tháng bảy"); break;
+           case "8": document.getElementById("b8").innerHTML=("Tháng tám"); break;
+           case "9": document.getElementById("b8").innerHTML=("Tháng chín"); break;
+           case "10": document.getElementById("b8").innerHTML=("Tháng mười"); break;
+           case "11": document.getElementById("b8").innerHTML=("Tháng mười một"); break;
+           case "12": document.getElementById("b8").innerHTML=("Tháng mười hai"); break;
+            }
+           }
+           function fs9(str)
+           {
+            let words = str.split(' ');
+           let maxLength = 0,max;
+          for (let i = 0; i < words.length; i++) {
+              if (words[i].length > maxLength) {
+               maxLength = words[i].length;
+               max=words[i];
+               }
+            }
+            document.getElementById("b9").innerHTML=(max);
+           }
+           function fs10(a,b)
+           {
+               let x= parseInt(a);
+               let y=parseInt(b);
+               let st="";
+            function IsPrime(n)
+             {
+              if (n < 2)
+              return false;
+              for (let i = 2; i <= Math.sqrt(n); i++)
+             {
+                 if (n % i == 0)
+                {
+                   return false;
+                   }
+             }
+               return true;
+             }
+             for (let i =x+1; i < y; i++)
+               {
+                  if (IsPrime(i))
+                {
+                      st+= i+" ";
+                 }
+               }
+               document.getElementById("b10").innerHTML=st;
+           }
+     </script>
+</body>
+</html>
