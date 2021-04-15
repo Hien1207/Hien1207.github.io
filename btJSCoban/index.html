@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bt_js.css">
+    <script type = "text / javascript" src = "jquery-1.7.2.min.js"> </script> 
+    <script type = "text / javascript" src = "functions.js"> </script>
+    <style>
+        td{
+            border: 1px solid rgb(196, 194, 192);
+            height: 60px;
+            font-size: 20px;
+        }
+        th{
+            border-bottom: 2px solid black;
+           font-size: 20px;
+           margin-left: 80px;
+           text-align: left;
+           color: rgb(48, 48, 138);
+        }
+    </style>
+    
+<body>
+    
+    <h1 style="margin-left: 50px; font-size: 40px; color: rgb(46, 75, 83);">Bài tập JS cơ bản!</h1>
+    <div class="js1">
+        <div class="js1_1">
+            <p class="font">Item name</p>
+            <form>
+                <input id="item" type="text" name="name" style="font-size: 18px;width: 170px;">
+            </form>
+            <span class="result-1"></span>
+        </div>
+        <div class="js1_1">
+            <p class="font">Category</p>
+            <form>
+                <select id="cate" name="cate" style="font-size: 18px; width: 150px;">
+                      <option value="No selected" selected>No selected</option>
+                      <option value="category1">Category1</option>
+                      <option value="category2">Category2</option>
+                      <option value="category3">Category3</option>
+                      <option value="category4">Category4</option>
+                </select>
+            </form>
+            <span class="result-2"></span>
+        </div>
+        <div class="js1_1">
+            <p class="font">Choose file</p>
+                <form id="form1" >
+                    <input type='file' id="imgInp" style="font-size: 18px; width: 300px;" />
+                    <img id="img" src="#" alt="your image"/>
+                   
+                </form>
+        </div>
+        <div class="js1_1">
+            <!-- <form>
+                <input id="sub" type="submit" value="Submit form" name="submit" style="font-size: 25px;margin:50px 100px; background: rgb(187, 222, 238);" accept=".jpg, .jpeg, .png" multiple>
+            </form> -->
+            <button type="button" id="updateButton"  style="font-size: 18px;margin:50px 50px; background: rgb(187, 222, 238);width: 150px;" onclick="add_row()" >Submit form</button>
+        </div>
+    </div>
+    <div class="js2">
+        <table id="mytable" >
+            <thead >
+                <tr >
+                    <th style="width: 80px; text-align: center;padding-left: 20px;">#</th>
+                    <th style="width: 350px;">Item Name</th>
+                    <th style="width: 350px;">Category</th>
+                    <th style="width: 250px;">Image</th>
+                    <th style="width: 350px;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+
+    </table>
+    </div>
+    
+ 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="jquery.uploadfile.js"></script>
+    <script src="script.js"></script>
+ </head>
+</body>
+</html>
