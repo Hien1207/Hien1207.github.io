@@ -1,0 +1,84 @@
+body {
+    margin:1.5%;
+}
+table {
+    width: 72%;
+}
+td, th {
+    border-bottom : 1px solid rgb(107, 94, 82);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+table th {
+    text-align: left;
+}
+.js1{
+    display: flex;
+    height: 140px;
+    width: 1000px;
+    margin:0px 50px;
+    border: 2px solid rgb(184, 184, 181);
+}
+.js1_1{
+    height: 50%;
+    width: 200px;
+    margin:0px 30px;
+}
+#nameitem {
+    border: 2px solid rgb(202, 198, 198);
+    margin-top: 10px;
+    width: 150px;
+    pointer-events: auto;
+}
+.errname, .errcate {
+    color: rgb(197, 167, 35);
+    font-size: 0.9rem;
+    display: block;
+    height: 0.5rem;
+}
+#submit {
+    width: 150px;
+    outline: none;
+    background-color: rgb(11, 194, 124);
+    margin-top: 50px;
+}
+#img1 {
+    width: 150px;
+    height: 75px;
+    display: inline-block;
+}
+.img {
+    width: 100px;
+    height: 50px;
+    vertical-align: middle;
+}
+.nameitems {
+    pointer-events: none;
+    width: 150px;
+}
+.listselect{
+    width: 150px;
+}
+.btn-edit {
+    background-color: blue;
+    color: white;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+.btn-delete {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+}
+.submit {
+    background-color: green;
+    color: white;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+.btn-choosefile {
+    display: none;
+}
+.cancel {
+    background-color: #646B71;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js.css">
+    <title>Document</title>
+    <style>
+        h3{
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="margin:0px 50px; font-size: 40px; color: rgb(46, 75, 83);">Bài tập JS cơ bản!</h1>
+    <form class="js1" >
+        <div class="js1_1">
+            <h3>Item name</h3>
+            <input class="nameitems" id="nameitem" type="text" >
+            <span class="errname"></span>
+        </div>
+        <div class="js1_1">
+            <h3>Category</h3>
+            <select class="listselect" id="category" value='Category 2'>
+                <option value="No selected" selected>No selected</option>
+                <option value="Category 1">Category 1</option>
+                <option value="Category 2">Category 2</option>
+                <option value="Category 3">Category 3</option>
+                <option value="Category 4">Category 4</option>
+            </select>
+            <span class="errcate"></span>
+        </div>
+        <div class="js1_1" id="File">
+            <input type="button" onclick="btn(0)" id="choosefile" value="Choose file"
+                style="display: block;"></input>
+            <img class="img" id="img1" alt="">
+            <input class="files" type="file" accept="image/x-png,image/gif,image/jpeg" hidden>
+        </div>
+        <div class="js1_1">
+            <input type="button" id="submit" class="submit" value="Submit"></input>
+        </div>
+    </form>
+
+    <table id="table">
+    </table>
+    <script src="./js.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</body>
+</html>
