@@ -503,6 +503,7 @@ body{
     transform: scale(1.2);
 }
 @media (min-width: 320px) and (max-width:860px){
+    
     .div1{
         height: 100%;
         width: 50%;
@@ -713,7 +714,7 @@ body{
         font-size: 9px;
     }
     .edu{
-        height: 5.9%;
+        height: 7%;
     }
     .work{
         height: 8%;
@@ -745,7 +746,7 @@ body{
         height: 22%;
     }
     #p5{
-        height: 3.1em;
+        height: 4.3em;
     }
     #p4-fas{
         color: rgb(207, 59, 59); margin:0.2em 0.3em;font-size: 0.85em;
