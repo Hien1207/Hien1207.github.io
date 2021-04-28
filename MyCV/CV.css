@@ -518,7 +518,17 @@ body{
         left: 0;
         display: none;
      }
-     
+     .side-menu{
+        height: 100%;
+        width: 19%;
+        left:-18em;
+        background: black;
+        z-index:1;
+        transition: all 1s ease;
+        position: fixed;
+        opacity: 0.8;
+        display: none;
+   }
     .div2-0{
         height: 300em;
         margin-top: 0.2em;
