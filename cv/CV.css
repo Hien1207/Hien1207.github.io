@@ -393,9 +393,11 @@ body{
 .btn-send{
     font-size: 20px; height: 50px; background: rgb(72, 75, 109);width: 160px;
      border-radius: 0.6em;
+     color: white;
 }
 .btn-send:hover{
-    background: rgb(44, 20, 150);
+    transition: all 3s;
+    background: rgb(17, 9, 56);
 }
 .contact-infos{
     text-align: left;
@@ -416,7 +418,7 @@ body{
     padding-top: 0.6em;
     padding-bottom: 1em;
     text-align: center;
-    margin-top: 2.9em;
+    margin-top: 5em;
 }
 .end1{
     font-size: 1.5em; margin-bottom: 0.3em;color: white;
@@ -521,6 +523,487 @@ body{
 .hover:hover ~ .image{
     transform: scale(1.2);
 }
+@media (min-width: 860px) and (max-width:1300px){
+    .div1{
+        height: 100%;
+        width: 12%;
+        position: fixed;
+        left: 0;
+     }
+     .menu{
+         height: 3.5em;
+         width: 7.2em;
+         background: rgb(58, 56, 56);
+         margin-top: 4em ;
+         display: inline-flex;
+     }
+     .menustyle{
+         color: white;
+          font-size: 1.2em;
+          margin-top: 0.9em;
+          cursor: pointer;
+     }
+     .side-menu{
+          height: 100%;
+          width: 13em;
+          left:-18em;
+          background: black;
+          z-index:1;
+          transition: all 1s ease;
+          position: fixed;
+          opacity: 0.8;
+     }
+     .close{
+         height: 4em;
+     }
+     #fas-close{
+         margin:0.5em 0.3em 1.5em 7em; font-size: 1.5em; color: rgb(179, 171, 156); cursor: pointer;
+     }
+     .side-menu-name{
+        height: 3em;
+        margin:0.8em 1.4em 0em 1.5em;
+        border: 0.15em solid white;
+        display: inline-flex;
+     }
+     .name{
+         color: white;font-size: 1.1em;font-weight:3; margin: 0.5em;
+     }
+     .side-menu-job{
+         height: 3em;
+         text-align: center;
+     }
+     .side-menu-este{
+         height: 20em;
+     }
+     .active{
+         height: 2.8em;
+         background: black;
+         font-size: 0.9em;
+         border-bottom: 0.09em dotted white;
+         margin:0em 1.4em;
+         transition:all 0.3s ease-in-out ;
+     }
+     .active:hover{
+         transform: translateX(0.6em);
+     }
+     .side-menu-button{
+         height: 6em;
+     }
+     .btn{
+         height: 3em;
+         border:0.06em solid white;
+         margin:1em 1.2em;
+     }
+     #btn-fas{
+         color: white; margin: 15px 20px; font-size: 12px;
+     }
+     .btn:hover{
+         background: rgb(206, 196, 183);
+     }
+     .div2-0{
+        height: 343em;
+         width: 80%;
+         display: flex;
+         align-items: center;
+     }
+     .div2{
+         height: 95.3%;
+         width: 100%;
+         background: rgb(245, 245, 245);
+         display: inline-block;
+         transition: all 0.5s ease-in-out;
+     }
+     #margin-btn{
+        margin-left: 2em;
+    }
+    #row1-fas{
+        color: white; margin-top:0.5em; margin-left: 0.55em;
+    }
+    .intro{
+        height: 3%;
+        width: 100%;
+        display: inline-flex;
+    }
+    .row-avata{
+        height:100%;
+        width: 35%;
+        margin-right: 0em;
+    }
+    .avata{
+        width: 67%;
+        border: 0.3em solid rgb(212, 49, 92);
+        border-radius: 50%;
+        margin-left: 15%;
+    }
+    .intro1{
+        height: 100%;
+        width: 65%;
+        margin:0em 2em 0em 1.4em;
+    }
+    .hi{
+        font-size: 40px; font-weight: 1;
+        margin-top: 0em;
+    }
+    .ten{
+        font-size: 40px; color: rgb(105, 141, 209);margin-left:10px;font-family:inherit;
+        margin-top: 0em;
+    }
+    .intro2{
+        height: 25%;
+        border-bottom: 0.1em solid rgb(49, 35, 35);
+        display: inline-flex;
+    }
+    .intro3{
+        font-size: 1.2em;
+        text-align: left;
+        margin: 0.3em;
+    }
+    .p-intro{
+        font-size: 15px;
+        margin: 0em;
+    }
+    .p-intro1{
+        font-size: 15px;
+    }
+    .line{
+        height: 3em;
+        width: 14em;
+        margin-left:2.5%; 
+    }
+    .line1{
+        height: 3em;
+        width: 11em;
+        margin-left: 2.5%; 
+    }
+    .timeline{
+        height: 3em;
+        width: 0.35em;
+        margin-left: 6em;
+        background: rgb(212, 49, 92);
+    }
+    .timeline0{
+        height: 0.12em;
+        width: 3em;
+        background: rgb(212, 49, 92);
+        margin-left: 6em;
+        display: block;
+    }
+    .timeline0-1
+    {
+        height: 0.2em;
+        width: 0.3em;
+        margin-left: 2.9em;
+        background: rgb(212, 49, 92);
+        border-radius: 50%;
+    }
+    .timeline1{
+       height: 2.5em;
+       width: 2.5em;
+       border:0.3em solid rgb(212, 49, 92);
+       margin-left: 4.6em;
+       border-radius: 50%;
+    }
+    .timeline2{
+        height: 1.2em;    
+        background:rgb(212, 49, 92);
+        border: 0.65em solid rgb(245, 245, 245);
+        border-radius: 50%;
+    }
+    .profile{
+        height: 26em;
+        width: 100%;
+        transition: all 1s ease-in-out;
+    }
+    .row2{
+        height: 4.28em;
+        width: 100%;
+        display:inline-flex;
+    }
+    .row3{
+        height: 4.28em;
+        width: 100%;
+        display:inline-flex;
+    }
+    .profile1{
+        height: 4.28em;
+        width: 100%;
+        text-align: left;
+        font-family:'Open Sans',sans-serif;
+    }
+    .profile2{
+        height:10em;
+        width: 80%;
+        text-align: left;
+        font-family:'Open Sans',sans-serif;
+    }
+    #p1{
+        height: 6em;
+    }
+    #p2{
+        height: 0.9em;
+    }
+    .p3{
+        margin-top:0.5em;
+    }
+    #p4{
+        height: 9.5em;margin-top: 1.5em;
+    }
+    #p4-1{
+        height: 9.5em;margin-top: 1.5em;
+    }
+    #p5{
+        height: 8em;
+    }
+    #p4-fas{
+       color: rgb(207, 59, 59); margin:0.25em;font-size: 1.7em;
+    }
+    #p5-fas{
+        color: rgb(207, 59, 59); margin:0.2em 0.1em;font-size: 1.7em;
+     }
+    #p6{
+        font-size: 1em; color: rgb(88, 80, 80);
+        margin: 0.2em;
+    }
+    #p7{
+        height: 7em;
+    }
+    .section{
+        text-transform: uppercase;
+        color:rgb(15, 15, 107);
+        font-weight: 700;
+        font-size: 2.3em;
+        line-height: 0.8em;
+        padding-bottom: 1.4em;
+    }
+    .section1{
+        color: rgb(62, 62, 136);
+        border-bottom: 0.05em solid rgb(156, 156, 145);
+        padding-bottom: 0.25em;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        font-weight: 700;
+        margin:0em 6em 0em 0em;
+    }
+    .edu{
+        height: 42em;
+    }
+    .work{
+        height: 52.5em;
+    }
+    .skill{
+        height: 41em;
+    }
+    .int{
+        height: 30em;
+    }
+    .por{
+        height: 31em;
+    }
+    .con{
+        height: 35em;
+    }
+    .con-line{
+        height: 20em;
+    }
+    .p8{
+        height: 26em;
+        width: 90%;
+    }
+    .p9{
+        height: 26em;
+    }
+    .por-line{
+        height: 12em;
+    }
+    .pro{
+        height: 32em;
+    }
+    .progress{
+        position: relative;
+        height: 1.5em;
+        margin:0.7em 7em 1.4em 0em;
+        border-radius: 0.2em;
+        box-shadow: inset 0 0.1em 0.2em rgb(0 10 10 / 10%);
+    }
+    .progress-bar{
+        background:rgb(212, 49, 92);
+        float: left;
+        height: 100%;
+        font-size: 1em;
+        line-height: 1.2em;
+        color: white;
+    }
+    .progress-type{
+        position:absolute;
+        left: 0;
+        font-size: 0.9em;
+        padding: 0.2em 1em 0.2em 1em;
+        color: white;
+    
+    }
+    .progress-completed{
+        position: absolute;
+        right: 0;
+        font-weight: 800;
+        padding: 0.3em 0.6em 0.2em;
+        font-size: 0.9em;
+        color:rgb(107, 104, 104);
+    }
+    .form0{
+        height: 24em;
+        width: 100%;
+        display: inline-flex;
+    }
+    .form{
+        height:24em ;
+        width: 50%;
+        margin-top: 0.8em;
+    }
+    .form-work{
+        width: 100%;
+        margin-bottom: 0.8em;
+        height: 3em;
+        background: rgb(212, 49, 92);
+        border-radius: 0.6em;
+        color: white;
+    }
+    .fwork{
+        height: 7em;
+    }
+    .btn-send{
+        font-size: 20px; height: 50px; background: rgb(72, 75, 109);width: 160px;
+         border-radius: 0.6em;
+         color: white;
+    }
+    .btn-send:hover{
+        transition: all 3s;
+        background: rgb(17, 9, 56);
+    }
+    .contact-infos{
+        text-align: left;
+        margin: 0.8em 0em 0.8em 2em;
+        font-size:1em ;
+        height: 18em;
+        width: 9em;
+    }
+    .con-inf{
+        font-size: 1em; margin-bottom: 0.1em; color: rgb(5, 5, 102);margin-top: 0;
+    }
+    .fcon{
+        color:rgb(110, 110, 110); font-size: 5em; font-weight:3;margin-top: 3.5em;
+    }
+    .end{
+        height: 6.2em;
+        background: rgb(71, 76, 88);
+        padding-top: 0.6em;
+        padding-bottom: 1em;
+        text-align: center;
+        margin-top: 10em;
+    }
+    .end1{
+        font-size: 1.5em; margin-bottom: 0.3em;color: white;
+    }
+    .end2{
+        font-size: 1.3em;font-weight: 700;color: white;
+    }
+    .btn-default{
+        display: inline-flex;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 1em;
+        height: 2em;
+        width: 2.5em;
+        background: rgb(19, 19, 104);
+        border-radius: 0.5em 0.5em;
+        z-index: -1;
+        margin: 0.5em 0.1em;
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+    }
+    .btn-default:hover{
+        opacity: 1;
+    }
+    .graduation-date{
+        font-size: 1em;
+        font-style: italic;
+        font-weight: 200;
+        color: rgb(154, 158, 158);
+    }
+    .graduation-des{
+        font-size: 1em;
+        width:90%;
+    }
+    .bx-viewport{
+        height: 10em;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        display: inline-flex;
+        margin-top: 1.4em;
+    }
+    .portfolio-item{
+        position: relative;
+        height: 100%;
+        width: 40%;
+        overflow: hidden;
+        margin-right: 0.5em;
+    }
+    .image {
+        width: 100%;
+        height: auto;
+    }
+    .hover{
+        width: 95%;
+        height: 93%;
+        margin: 0.34em;
+        color: white;
+        cursor: crosshair!important;
+        background: rgb(212, 49, 92);
+        position:absolute;
+        opacity: 0;
+        top: 0em;
+        box-sizing: border-box;
+    }
+    .zoomi{
+        position: absolute;
+        height: 40%;
+        width: 100%;
+        bottom: 1.2em;
+        left: 1.7em;
+        color: white;
+        font-size: 3em;
+        opacity: 1;
+        transition: transform 0.5s;
+        transition: all 0.3s ease-in-out;
+    }
+    .portfolio-item-title{
+        font-size: 1em;
+        text-transform: uppercase;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        bottom: 1em;
+        font-weight: 200;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+    }
+    .portfolio-img{
+        height: 100%;
+        width: 100%;
+        background:rgb(230, 227, 227);
+        background-size: cover;
+        position: fixed;
+        opacity: 0;
+        z-index: -5;
+    }
+    .hover:hover{
+        opacity: 1;
+        transition: all 0.9s ease-in-out;
+    }
+    .hover:hover ~ .image{
+        transform: scale(1.2);
+    }
+}
 @media (min-width: 320px) and (max-width:860px){
     
     .div1{
@@ -545,6 +1028,7 @@ body{
         height: 300em;
         margin-top: 0.2em;
          width: 95%;
+         margin-right: 2%;
          display: flex;
          align-items: center;
      }
@@ -565,8 +1049,7 @@ body{
     .intro{
         height: 11%;
         width: 100%;
-        display: block;
-      
+        display: block; 
     }
     .row-avata{
         height:40%;
@@ -812,6 +1295,7 @@ body{
         height: 40%;
         width: 100%;
         left: 0em;
+        text-align: center;
         color: white;
         font-size: 1em;
         opacity: 1;
