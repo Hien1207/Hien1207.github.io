@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="main" id="todo" >
+        <h1>Todo List</h1>
+        <input type="text" v-model="currentInput" placeholder="What needs to be done?" @keyup.enter="add">
+        <button v-on:click="add">></button>
+        <li v-for="item in todo" 
+             v-on:click="complete(item)"
+            >
+       <input class="check" type="checkbox"
+        v-bind:checked="item.isComplete">
+       <span  v-bind:class="{completed: item.isComplete}">{{ item.name }}</span>
+          <div class="btn"  v-on:click="complete(item)">
+            <button  v-on:click="edit(item)" class="btnedit"><i class="fa fa-edit"></i></button> 
+            <button  v-on:click="remove(item)" class="btndel"><i class="fa fa-minus"></i></button> 
+         </div>
+        </li> 
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

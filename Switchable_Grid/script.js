@@ -1,0 +1,55 @@
+new Vue({
+    el: '#app',
+    data: {
+      layout: 'grid',
+          articles: [{
+              "title": "What You Need To Know About CSS Variables",
+              "url": "http://tutorialzine.com/2016/03/what-you-need-to-know-about-css-variables/",
+              "image": {
+                  "large": "http://tutorialzine.com/media/2016/03/css-variables.jpg",
+                  "small": "http://tutorialzine.com/media/2016/03/css-variables.jpg"
+              }
+          },
+          {
+              "title": "Freebie: 4 Great Looking Pricing Tables",
+              "url": "http://tutorialzine.com/2016/02/freebie-4-great-looking-pricing-tables/",
+              "image": {
+                  "large": "http://tutorialzine.com/media/2016/02/great-looking-pricing-tables.jpg",
+                  "small": "http://tutorialzine.com/media/2016/02/great-looking-pricing-tables.jpg"
+              }
+          },
+          {
+              "title": "20 Interesting JavaScript and CSS Libraries for February 2016",
+              "url": "http://tutorialzine.com/2016/02/20-interesting-javascript-and-css-libraries-for-february-2016/",
+              "image": {
+                  "large": "http://tutorialzine.com/media/2016/02/interesting-resources-february.jpg",
+                  "small": "http://tutorialzine.com/media/2016/02/interesting-resources-february.jpg"
+              }
+          },
+          {
+              "title": "Quick Tip: The Easiest Way To Make Responsive Headers",
+              "url": "http://tutorialzine.com/2016/02/quick-tip-easiest-way-to-make-responsive-headers/",
+              "image": {
+                  "large": "http://tutorialzine.com/media/2016/02/quick-tip-responsive-headers.png",
+                  "small": "http://tutorialzine.com/media/2016/02/quick-tip-responsive-headers.png"
+              }
+          },
+          {
+              "title": "Learn SQL In 20 Minutes",
+              "url": "http://tutorialzine.com/2016/01/learn-sql-in-20-minutes/",
+              "image": {
+                  "large": "http://tutorialzine.com/media/2016/01/learn-sql-20-minutes.png",
+                  "small": "http://tutorialzine.com/media/2016/01/learn-sql-20-minutes.png"
+              }
+          },
+          {
+              "title": "Creating Your First Desktop App With HTML, JS and Electron",
+              "url": "http://tutorialzine.com/2015/12/creating-your-first-desktop-app-with-html-js-and-electron/",
+              "image": {
+                  "large": "http://tutorialzine.com/media/2015/12/creating-your-first-desktop-app-with-electron.png",
+                  "small": "http://tutorialzine.com/media/2015/12/creating-your-first-desktop-app-with-electron.png"
+              }
+          }]
+  
+    }
+  });

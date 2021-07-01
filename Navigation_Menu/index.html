@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="navigation_menu.css">
+</head>
+<body>
+    <div id="app">
+        <nav >
+            <a href="#" v-on:click="SuLyNavBar('HOME')" class="active1">HOME</a>
+            <a href="#" v-on:click="SuLyNavBar('PROJECTS')" class="active1">PROJECTS</a>
+            <a href="#" v-on:click="SuLyNavBar('SERVICES')" class="active1">SERVICES</a>
+            <a href="#" v-on:click="SuLyNavBar('CONTACT')" class="active1">CONTACT</a>
+        </nav>
+        <p>You chose 
+            <b>{{active}}</b>
+        </p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

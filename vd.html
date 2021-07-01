@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    <div id="app">
+         <p :style="{fontSize: '${postFontSize}px' }">Hello word</p>
+          <blog-post   @enlarge-text="incFontSize "> </blog-post>
+          <blog-post   @enlarge-text="incFontSize "> </blog-post>
+          <button-counter></button-counter>
+           <button-counter></button-counter>
+           <button-counter></button-counter>
+        <!-- <p>Biến A: {{bienA}}</p>
+        <p>Biến B: {{bienB}}</p>
+        {{bienC}}
+        <button v-on:click="++bienA">Plus</button> -->
+
+
+        <!-- <input type="text" v-model="currentInput">
+        <button v-on:click="addToArr">Add new</button>
+        <p v-for="item in arr" 
+            v-on:click="removeFromArr(item)"
+            v-bind:style="{
+                color :item.done ? 'gray' : 'black'
+            }"
+        >
+            {{ item.name }}
+            <span v-if="item.done">Da lam xong</span>
+            <span v-else>Chua xong</span>
+        </p>  -->
+    </div>
+    <script src="./scriptvd.js"></script>
+</body>
+</html>

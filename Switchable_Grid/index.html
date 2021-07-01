@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switchable_grid</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="Switchable_grid.css">
+</head>
+<body>
+    <form id="app">
+        <div class="bar">
+          <a class="list-icon" v-bind:class="{ 'active': layout == 'list'}" v-on:click="layout = 'list'"></a>
+          <a class="grid-icon" v-bind:class="{ 'active': layout == 'grid'}" v-on:click="layout = 'grid'"></a>
+        </div>
+        <ul v-if="layout == 'grid'" class="grid">
+          <li v-for="anh in articles">
+            <a v-bind:href="anh.url" target="_blank"><img v-bind:src="anh.image.large" /></a>
+          </li>
+        </ul>
+        <ul v-if="layout == 'list'" class="list">
+          <li v-for="anh in articles">
+            <a v-bind:href="anh.url" target="_blank"><img v-bind:src="anh.image.small" /></a>
+            <p>{{anh.title}}</p>
+          </li>
+        </ul>
+      </form>
+      <script src="./script.js"></script>
+</body>
+</html>
